@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface BaseViewController : UIViewController
+@property (nonatomic,assign) CGFloat keyboardHeight;
+@property (nonatomic,strong) UIImage *backgroundImage;
 
+-(void)keyboardWillShow:(NSNotification *)notification;
+-(void) keyboardWillHide:(NSNotification *)notification;
 @end

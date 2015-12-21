@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import <GooglePlus/GooglePlus.h>
+#import <GoogleOpenSource/GoogleOpenSource.h>
+#import <Google/SignIn.h>
 
-@interface AuthenticationViewController :BaseViewController
+@interface MGAuthenticationViewController :BaseViewController
 
 @end

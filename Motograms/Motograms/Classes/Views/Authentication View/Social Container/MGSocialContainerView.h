@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SocialContainerView : UIView
+@class MGSocialContainerView;
 
+@protocol SocialContainerDelegate <NSObject>
+
+- (void)clickedOnFacebookButtonToLoginInView:(MGSocialContainerView *)socialContainerView;
+- (void)clickedOnTwitterButtonToLoginInView:(MGSocialContainerView *)socialContainerView;
+- (void)clickedOnGooglePlusButtonToLoginInView:(MGSocialContainerView *)socialContainerView;
+
+@end
+
+@interface MGSocialContainerView : UIView
+@property (nonatomic,weak) id<SocialContainerDelegate>delegate;
 @end

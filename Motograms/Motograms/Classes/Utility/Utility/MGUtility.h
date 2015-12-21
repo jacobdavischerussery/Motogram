@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface MGUtility : NSObject
 
++ (void)saveImageInDocumentsDirectoryWithImage:(UIImage *)newImage;
++(NSString *)getTheProfileImagePath;
 @end

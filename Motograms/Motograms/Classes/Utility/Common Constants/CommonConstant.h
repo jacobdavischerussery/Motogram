@@ -10,4 +10,11 @@
 
 @interface CommonConstant : NSObject
 
+typedef enum
+{
+    kBlackTileLayout,
+    kRedTileLayout
+    
+}LayoutType;
+
 @end
